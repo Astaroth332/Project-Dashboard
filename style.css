@@ -5,8 +5,6 @@
     font-family: "Roboto", sans-serif;
 }
 
-
-
 .container {
     height: 100vh;
     display: grid;
@@ -16,33 +14,35 @@
 }
 
 .header {
-    border: 1px solid green;
+    margin-top: 25px;
     grid-area: 1 / 2 / 2 / 3 ;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .searchbar-and-avatar {
     display: flex;
+    flex-direction: row wrap;
+    justify-content: space-around;
     gap: 50px;
+    margin-bottom: 25px;
 }
 
 .searchbar {
     display: flex;
-    border: 1px solid black;
     align-items: center;
     gap: 10px;
+  
 }
 .searchbar input[type="text"] {
     flex: 1;
-    min-width: 350px;
+    min-width: 500px;
     font-size: 14px;
     padding: 5px;
     border: none;
     background-color: rgb(211, 203, 203);
     border-radius: 8px;
-    
 }
 
 .searchbar button {
@@ -57,7 +57,6 @@
 }
 
 .avatar {
-    border: 1px solid black;
     display: flex;
     align-items: center;
     gap: 25px;
@@ -79,8 +78,34 @@
 
 
 .welcome-profile-and-interaction-button {
+display: flex;
+flex-flow: row wrap;
+justify-content: space-between;
+margin-bottom: 25px;
 
 }
+
+.welcome-profile {
+    display: flex;
+    align-items: end;
+    gap: 15px;
+    padding-left: 45px;
+}
+
+.welcome-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.welcome-text > p:nth-child(1) {
+    font-size: 12px;
+    font-weight: 600;
+}
+.welcome-text > p + p {
+    font-size: 1.2rem;
+    font-weight: 900;
+}
+
 
 .welcome-profile-and-interaction-button div > img{
     height: 50px;
@@ -88,11 +113,91 @@
     border-radius: 50%;
 }
 
+.interaction-button {
+    display: flex;
+    flex-direction: row wrap;
+    align-items: end;
+    gap: 20px;
+    padding-right: 45px;
+
+}
+
+.interaction-button button {
+    font-size: 15px;
+    padding: 7px;
+    border-radius: 25px;
+    width: 100px;
+    cursor: pointer;
+    background-color: #99f6e4;
+    box-shadow: 2px 2px 2px rgb(111, 105, 105)
+}
+
+.interaction-button button:hover {
+    background-color: black;
+    color: #99f6e4;
+}
+
+.interaction-button button:active {
+    opacity: .7;
+}
 
 .main-content {
-    border: 1px solid red;
     grid-area: 2 / 2 / 3 / 3;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    background-color: rgb(211, 203, 203);
 }
+
+.project {
+    margin: 25px 0 25px 15px;
+}
+
+.project > h3 {
+    margin-bottom: 10px;
+}
+
+.project .card-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px,1fr));
+    gap: 15px;
+}
+
+.card {
+    height: 200px;
+    border-left: 10px solid #4d7c0f;
+    border-radius:12px ;
+    padding-left: 15px;
+    padding-top: 30px;
+    padding-right: 15px;
+    position: relative;
+    background-color: white;
+}
+
+.card p {
+    font-size: 13px;
+    color: rgb(100, 97, 97);
+    text-align: start;
+}
+
+.card-button {
+    display: flex;
+    gap: 35px;
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+}
+
+.card button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.card .image {
+    width: 18px;
+}
+
 
 .sidebar {
     padding-top: 15px;

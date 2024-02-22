@@ -1,0 +1,176 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows:1fr 3fr ;
+    
+}
+
+.header {
+    border: 1px solid green;
+    grid-area: 1 / 2 / 2 / 3 ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.searchbar-and-avatar {
+    display: flex;
+    gap: 50px;
+}
+
+.searchbar {
+    display: flex;
+    border: 1px solid black;
+    align-items: center;
+    gap: 10px;
+}
+.searchbar input[type="text"] {
+    flex: 1;
+    min-width: 350px;
+    font-size: 14px;
+    padding: 5px;
+    border: none;
+    background-color: rgb(211, 203, 203);
+    border-radius: 8px;
+    
+}
+
+.searchbar button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+   
+}
+.searchbar .image {
+    width: 20px;
+}
+
+.avatar {
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.avatar .image {
+    width: 20px;
+}
+
+.avatar img {
+    width: 30px;
+    height: 30px;
+    border-radius:50%;
+}
+
+.avatar span {
+    font-weight: 600;
+}
+
+
+.welcome-profile-and-interaction-button {
+
+}
+
+.welcome-profile-and-interaction-button div > img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+
+.main-content {
+    border: 1px solid red;
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+.sidebar {
+    padding-top: 15px;
+    padding-left: 15px;
+    grid-area: 1 / 1 / 3 / 2;
+    background-color:#99f6e4;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.branding-logo a{
+    text-decoration: none;
+    color: black;
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.branding-logo .image{
+    width: 45px;
+    color: white;
+}
+
+.branding-logo span {
+    
+    font-family: "Roboto", sans-serif;
+    font-weight: 1.5rem;
+    font-weight: 600;
+}
+
+.main-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.main-buttons > div a {
+    text-decoration: none;
+    color: black;
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.main-buttons .image {
+    width: 30px;
+   
+}
+
+.main-buttons > div span {
+    font-weight: 1.1rem;
+    font-weight: 600;
+}
+
+.help-button {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+
+
+.help-button > div a {
+    text-decoration: none;
+    color: black;
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.help-button .image {
+    width: 30px;
+   
+}
+
+.help-button > div span {
+    font-family: "Roboto", sans-serif;
+    font-weight: 1.1rem;
+    font-weight: 600;
+}

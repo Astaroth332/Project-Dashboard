@@ -19,6 +19,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    box-shadow: 0 10px 3px rgb(20, 19, 19);
 }
 
 .searchbar-and-avatar {
@@ -146,6 +147,7 @@ margin-bottom: 25px;
     display: grid;
     grid-template-columns: 3fr 1fr;
     background-color: rgb(211, 203, 203);
+    box-shadow: inset 0px 8px 6px 0px rgba(115,115,115,0.92);
 }
 
 .project {
@@ -171,6 +173,7 @@ margin-bottom: 25px;
     padding-right: 15px;
     position: relative;
     background-color: white;
+    box-shadow: 2px 2px 3px rgb(180, 178, 178);
 }
 
 .card p {
@@ -196,6 +199,82 @@ margin-bottom: 25px;
 
 .card .image {
     width: 18px;
+}
+
+.announcement {
+    margin-left: 15px;
+    margin-top: 35px;
+    margin-right: 25px;
+}
+
+
+.announcement h4 {
+    padding-bottom:5px ;
+}
+
+.announcement-content-container {
+    background-color: white;
+    border-radius: 5px;
+    padding: 12px 0;
+    box-shadow: 2px 2px 3px rgb(180, 178, 178);
+}
+.announcement-content {
+  padding: 15px 19px 15px 15px;
+}
+
+.announcement-content h5 + p {
+    font-size: .7rem;
+}
+
+hr {
+    margin: 0 15px;
+}
+
+.trending {
+    margin-top: 5px;
+}
+
+.trending h4 {
+    padding: 25px 0 5px 15px;
+}
+
+.trending-container {
+    background-color: white;
+    margin: 0 25px 0 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 25px 15px;
+    border-radius: 7px;
+    box-shadow: 2px 2px 3px rgb(180, 178, 178);
+}
+
+.user {
+    display: flex;
+    gap: 12px;
+}
+
+.image-holder img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+ 
+}
+
+.user div + div {
+    display: flex;
+    flex-direction: column;
+}
+
+.user div span:first-child {
+    font-size: .8rem;
+    font-weight:700;
+
+}
+
+.user div + div p{
+    font-size: .7rem;
+    color: rgb(74, 70, 70);
 }
 
 
